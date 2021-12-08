@@ -5,4 +5,7 @@ source /etc/environment
 
 
 
-cat ~/.bashrc
+echo "--- done ---"
+
+
+cat /etc/environment
