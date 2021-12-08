@@ -1,0 +1,16 @@
+
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+name: "Remove ENV"
+description: "Github Action for lint of some code."
+author: "super attacker"
+
+runs:
+  using: "composite"
+  steps:
+    - run: $GITHUB_ACTION_PATH/prepare.sh
+      shell: bash
+    - run: env
+      shell: bash
+branding:
+  color: "green"
+  icon: "package"
