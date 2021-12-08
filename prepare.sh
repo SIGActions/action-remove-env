@@ -1,3 +1,3 @@
-sudo sed -i 's/PATH=.*/PATH=\//g' /etc/environment
+sudo sed -i 's/PATH=.*//g' /etc/environment
 
 env
